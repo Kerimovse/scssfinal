@@ -1,0 +1,156 @@
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 6.8rem 2rem;
+  position: relative;
+}
+
+.header_icon_list {
+  display: flex;
+  font-size: 1.7rem;
+  gap: 1rem;
+}
+
+.header_Input {
+  width: 54rem;
+  height: 4rem;
+  position: absolute;
+  top: 7rem;
+  border: 1px solid black;
+  background-color: #f6f6f8;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.header_Input input {
+  width: 54rem;
+  height: 4rem;
+  padding: 0 5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.zero {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  background-color: #ed008c;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.menu {
+  font-size: 1.7rem;
+}
+
+.search {
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  color: black;
+}
+
+.globe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  display: none;
+}
+
+.glob {
+  font-size: 2.5rem;
+}
+
+.mobile_Logo {
+  margin-left: -39.5rem;
+}
+
+.desktop_Logo {
+  display: none;
+}
+
+.container_ul_li {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 2rem 0 3rem;
+  }
+  .header_Input {
+    position: absolute;
+    top: 2.2rem;
+    margin-left: 30rem;
+  }
+  .menu {
+    display: none;
+  }
+  .desktop_Logo {
+    display: block;
+    margin-left: -35rem;
+    margin-top: 1rem;
+  }
+  .globe {
+    display: block;
+    font-size: 3rem;
+    margin-right: -600px;
+    margin-top: -1.5rem;
+  }
+  .glob {
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 45rem;
+  }
+  .header_icon_list {
+    color: black;
+    font-size: 3rem;
+    display: flex;
+    gap: 3rem;
+    margin-right: 10rem;
+  }
+  .zero {
+    font-size: 2rem;
+    padding: 0.1rem 0.7rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 1rem;
+    right: 11rem;
+  }
+  .container_ul_li {
+    display: flex;
+    background-color: black;
+    color: #fff;
+  }
+  .container_ul_li ul, li {
+    display: flex;
+    margin: 0.5rem 1.7rem 0.5rem 2.7rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  .container_ul_li li:hover {
+    color: red;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -7,6 +7,11 @@
   @include flex(row, space-between, center);
   padding: 2rem 2rem 6.8rem 2rem;
   position: relative;
+ 
+ 
+
+
+  
 }
 .header_icon_list {
   @include flex();
@@ -39,7 +44,7 @@
   top: 1.5rem;
   right: 1rem;
   background-color: (map-get($color, "$pink"));
-  padding: 0.2rem 0.5rem;
+  padding: 0.05rem 0.6rem;
   border-radius: 1rem;
 }
 .menu {
@@ -99,9 +104,9 @@ display: none;
   }
   .globe {
     display: block;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-right: -600px;
-    margin-top: -1.5rem;
+   
   }
   .glob {
     color: (map-get($color, "$black"));
@@ -118,8 +123,8 @@ display: none;
     margin-right: 10rem;
   }
   .zero {
-    font-size: 2rem;
-    padding: 0.1rem 0.7rem;
+    font-size: 1.5rem;
+    padding: 0.1rem 0.8rem;
     border-radius: 10rem;
     position: absolute;
     top: 1rem;

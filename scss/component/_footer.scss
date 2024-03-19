@@ -1,0 +1,96 @@
+@import "../helper/mixin";
+@import "../helper/variable";
+// footer scss mobile start
+.footer {
+  background-color: (map-get($color, "$black"));
+  color: (map-get($color, "white"));
+}
+.child_footer {
+  @include flex(column, center, center);
+  text-align: center;
+}
+
+.h3 {
+  padding: 2rem 0;
+}
+.footer_div1 {
+  margin-top: 4rem;
+}
+.footer p {
+  font-size: 1.5rem;
+}
+.footer_icon {
+  margin: 0 0 4rem 5rem;
+  @include flex(row);
+  gap: 2.5rem;
+}
+.divh5 {
+  margin: 0 0 1.5rem 0;
+}
+// sonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+.footer_end_2p {
+  @include flex(row);
+  margin: 1.5rem 0 0 15rem;
+}
+.fotp1 {
+  margin-right: 5rem;
+}
+
+.end {
+  @include flex();
+  margin: 1.5rem 0 1.5rem 17.5rem;
+}
+.footerEnd {
+  margin: -1rem 1rem 0 0;
+}
+.hr_img img {
+  width: 575px;
+  margin: 1.5rem 0;
+}
+.hr_img2{
+    display: none;
+}
+
+// footer scss mobile end
+
+// footer scss desktop start
+@media screen and (min-width: map-get($breakpoints,md )) {
+  .footer {
+    background-color: (map-get($color, "$black"));
+    color: (map-get($color, "white"));
+  }
+  .footer_divs {
+    @include flex(row, center, baseline);
+    text-align: start;
+  }
+  .footer_div2 {
+    margin: 0 17rem;
+  }
+  .footer_div3 {
+    margin-right: 18rem;
+  }
+  .footer_icon {
+   margin: 0 0 3rem -0.1rem;
+  }
+  .hr_img {
+    display: none;
+  }
+  .hr_img2{
+    display: block;
+  }
+  .hr_img2 img{
+    width: 123rem;
+    margin: 6rem 0 2rem 5rem;
+  
+  }
+  .footer-mother {
+    @include flex(row-reverse);
+  }
+  .end {
+    margin-left: 4rem;
+  }
+  .fotp1 {
+    margin-left: 60rem;
+  }
+}
+// footer scss desktop end

@@ -50,9 +50,12 @@
 // navbar img end
 //    card_hisse start
 .card_Container1 {
-  
-    background-color: (map-get($color, 'card'));
+  background-color: (map-get($color, "card"));
 }
+.containers {
+  @include flex();
+}
+
 .Container1_child {
   border: 1px solid white;
   width: 25rem;
@@ -73,6 +76,9 @@
 .card_img {
   padding-top: 3rem;
 }
+.card_star {
+  display: none;
+}
 .container_p {
   display: none;
 }
@@ -84,7 +90,15 @@
   padding: 0.3rem 0.3rem;
   border-radius: 10rem;
   color: (map-get($color, "$black"));
-  
+}
+.ion2 {
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  margin-top: 0.8rem;
+  margin-left: 40px;
+  padding: 0.3rem 0.3rem;
+  border-radius: 10rem;
+  color: (map-get($color, "$red"));
 }
 .card_end {
   width: 23rem;
@@ -99,10 +113,108 @@
 .prize2 {
   @include flex();
   gap: 0.5rem;
-  margin:0.6rem 0.1rem 0 0;
-
+  margin: 0.6rem 0.1rem 0 0;
+ 
 }
+.two_Container1_child {
+  display: none;
+}
+
 // card_hisse end
+// card container2 start
+.card2Container {
+  border: 1px solid white;
+  width: 25rem;
+  background-color: (map-get($color, "$header-navbar"));
+  border-radius: 0.4rem;
+  margin-left: 1.5rem;
+  @include flex(row, center, center, center, wrap);
+}
+.mother {
+  background-color: (map-get($color, "$header-navbar"));
+  border-radius: 0.4rem;
+}
+.ionCont2 {
+  border: 1px solid rgb(183, 179, 179);
+  border-radius: 5rem;
+  padding: 0.4rem 0.4rem;
+  font-size: 1.5rem;
+  margin: 10px 0 0 205px;
+}
+.container2_img {
+  text-align: center;
+}
+.container2_cards {
+  @include flex();
+  margin-left: 1.5rem;
+  gap: 1.6rem;
+}
+
+.card3Card4 {
+  display: none;
+}
+.cont_img2 {
+  width: 25rem;
+  margin-top: -3.9rem;
+  height: 25.7rem;
+}
+// card container2 end
+
+// container 3start
+.main_Container3 {
+  @include flex(column);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.div {
+  margin: 2rem 0 3.5rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.cont3_img1 {
+  width: 57.6rem;
+}
+.cont3_img2 {
+  width: 57.6rem;
+}
+// container3 end
+
+// container5 start
+.cont5_img img {
+  width: 57.6rem;
+}
+// container5 end
+
+// container6 start
+.container6 {
+  display: none;
+}
+// container6 end
+
+// container7 start
+.cont7_title {
+  width: 15rem;
+  text-align: center;
+  margin: 2rem 0 0 22rem;
+}
+.cont7_input_btn {
+  @include flex(row, start, center);
+  padding: 2rem 0 3rem 1.5rem;
+}
+.input input {
+  border-radius: 0.4rem;
+  padding: 0.8rem 27rem 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  border: 1px solid white;
+}
+.btn button {
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+  background-color: (map-get($color, "$black"));
+  color: (map-get($color, "white"));
+  font-size: 1.4rem;
+}
+// container7 end
 
 // desktop start
 @media screen and (min-width: map-get($breakpoints, md)) {
@@ -115,5 +227,201 @@
   .mobile_img1 img {
     display: none;
   }
+  .mobile_none {
+    display: block;
+  }
+  .two_Container1_child {
+    display: block;
+  }
+  .two_Container1_child {
+    @include flex();
+  }
+  .inner_h {
+    padding: 1.5rem 0rem;
+  }
+  .card_Container1 {
+    padding: 0 9rem;
+  }
+  .container_p {
+    display: block;
+  }
+  .Container1_child {
+    width: 28.7rem;
+  }
+  .cont_p1 {
+    width: 7.2rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    background-color: (map-get($color, "contp1"));
+    text-align: center;
+    color: (map-get($color, "white"));
+  }
+  .cont_p2 {
+    width: 7.2rem;
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+    background-color: (map_get($color, "contp2"));
+    margin-top: -0.9rem;
+    color: (map-get($color, "white"));
+  }
+  .container_p {
+    margin: 1rem 0 0 0;
+    z-index: 1;
+  }
+  .card_img {
+    margin-left: -3rem;
+    margin-top: 2rem;
+  }
+  .ion {
+    margin: 1rem 0 0 3.5rem;
+  }
+  .cardp2 {
+    width: 3rem;
+
+    color: white;
+    background-color: #361283;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 1rem 4.2rem 1rem 1rem;
+  }
+  .card_star {
+    display: block;
+    margin-top: 0rem;
+    margin-left: -3.3rem;
+    z-index: 1;
+  }
+  .child_container3 {
+    @include flex(row, space-between, flex-start);
+  }
+  .cont_p_very {
+    color: (map-get($color, "white"));
+
+    width: 70px;
+    text-align: center;
+
+    background-color: (map-get($color, "linear"));
+    border-radius: 5rem;
+    padding: 1.6rem;
+  }
+
+  .card_heart img {
+    margin-left: -190px;
+    margin-top: 25px;
+  }
+
+  .cont_p_very {
+    margin-left: 10px;
+  }
+  .card_3img {
+    margin-left: -190px;
+    margin-top: 40px;
+    z-index: 5;
+  }
+
+  .link {
+    margin-left: -318px;
+    margin-top: 60px;
+  }
+  .child_container4 {
+    @include flex(row, space-around);
+  }
+  .card_icon {
+    @include flex(row);
+  }
+  .card_img4 {
+    margin-left: -300px;
+    margin-top: -1px;
+  }
+  .card_h4 {
+    color: white;
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+    padding: 2rem 6.2rem 2rem 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: (map-get($color, "$red"));
+  }
+  .card_heart4 .ion {
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: (map-get($color, "white"));
+    font-size: 25px;
+  }
+  // card1 container end
+
+  // container2 start
+  .card3Card4 {
+    display: block;
+    gap: 1.5rem;
+
+    @include flex();
+  }
+  .mother {
+    width: 28.7rem;
+  }
+  .container2_ion {
+    margin-left: 4rem;
+  }
+  .cont_img2 {
+    width: 286px;
+  }
+  //  container2 end
+
+  //  main container3 start
+  .main_Container3 {
+    @include flex(row);
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+  }
+  .div {
+    display: none;
+  }
+  .cont3_img1 {
+    width: 59rem;
+  }
+  .cont3_img2 {
+    width: 59rem;
+  }
+  // main container3 end
+
+  // container5 start
+  .cont5_img img {
+    width: 119.6rem;
+    margin: 3rem 0 0 1.5rem;
+  }
+  // container5 end
+
+  // container6 start
+  .container6 {
+    display: block;
+  }
+  .cont_logo_img {
+    @include flex();
+    gap: 2.9rem;
+    margin: 2rem 0 0 1.5rem;
+  }
+  .img6 img {
+    padding: 1.2rem 2.2rem;
+    background-color: (map-get($color, "white"));
+    border-radius: 0.8rem;
+  }
+  // container6 end
+
+  // container7 start
+  .cont7_title {
+    width: 40rem;
+    font-size: 1.6rem;
+    margin: 10rem 0 3rem 44rem;
+   
+  }
+  .input input {
+    margin-left: 35rem;
+   
+  }
+
 }
+// container7 end
+
 // desktop end

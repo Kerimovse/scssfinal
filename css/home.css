@@ -74,6 +74,15 @@
   font-size: 2.5rem;
 }
 
+.heart {
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.heart:hover {
+  color: red;
+}
+
 .mobile_Logo {
   margin-left: -39.5rem;
 }
@@ -114,6 +123,9 @@
     font-size: 1.5rem;
     margin-right: -600px;
   }
+  .globe select {
+    border: none;
+  }
   .glob {
     color: black;
     font-size: 3rem;
@@ -141,7 +153,8 @@
     background-color: black;
     color: #fff;
   }
-  .container_ul_li ul, li {
+  .container_ul_li ul,
+  li {
     display: flex;
     margin: 0.5rem 1.7rem 0.5rem 2.7rem;
     font-size: 1.4rem;
@@ -153,6 +166,11 @@
     cursor: pointer;
   }
 }
+.container_ul_li ul a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -164,6 +182,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.footer_divs a {
+  color: white;
+  text-decoration: none;
 }
 
 .h3 {
@@ -367,15 +390,10 @@
   padding: 0.3rem 0.3rem;
   border-radius: 10rem;
   color: black;
+  transition: 0.3s;
 }
 
-.ion2 {
-  font-size: 1.5rem;
-  border: 1px solid grey;
-  margin-top: 0.8rem;
-  margin-left: 40px;
-  padding: 0.3rem 0.3rem;
-  border-radius: 10rem;
+.ion:hover {
   color: red;
 }
 
@@ -565,12 +583,11 @@
     margin: 1rem 0 0 3.5rem;
   }
   .cardp2 {
-    width: 3rem;
     color: white;
-    background-color: #361283;
     text-align: center;
     border-radius: 5rem;
-    padding: 1rem 4.2rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: linear-gradient(180deg, #ae28e6 0%, #7221cc 100%);
   }
   .card_star {
     display: block;
@@ -595,6 +612,12 @@
   .card_heart img {
     margin-left: -190px;
     margin-top: 25px;
+  }
+  .card_heart {
+    transition: 0.1s;
+  }
+  .card_heart:hover {
+    color: red;
   }
   .cont_p_very {
     margin-left: 10px;
@@ -637,6 +660,18 @@
     background-color: white;
     font-size: 25px;
   }
+  .ins ins {
+    text-decoration: none;
+  }
+  .money {
+    margin-bottom: 1rem;
+  }
+  .star_a {
+    margin-top: 3.4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
   .card3Card4 {
     display: block;
     gap: 1.5rem;
@@ -666,6 +701,15 @@
   }
   .cont3_img2 {
     width: 59rem;
+  }
+  .card_heart4 .ion {
+    font-size: 1.6rem;
+    text-align: end;
+  }
+  .card_img4 img {
+    width: 28.75rem;
+    height: 27.4rem;
+    margin-left: 5rem;
   }
   .cont5_img img {
     width: 119.6rem;

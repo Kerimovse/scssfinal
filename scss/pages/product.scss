@@ -1,0 +1,43 @@
+@import "../component/header";
+@import "../helper/mixin";
+@import "../helper/variable";
+.inner_Container {
+  border: 1px solid black;
+  margin: 2rem;
+  width: 27rem;
+
+  .child_Container {
+    @include flex(row, space-between);
+    padding: 1rem;
+    .img {
+      z-index: +5;
+    }
+    .card_heart {
+      transition: 3s;
+    }
+    .input_link {
+      display: none;
+      
+    }
+    .child_Link {
+      @include flex(column, start, center);
+      gap: 1rem;
+    }
+    .card_heart:hover + .input_link,
+    .input_link:hover {
+      display: block;
+      transition-delay: 3s;
+      padding: 0 0 0 -5rem;
+      z-index: +5;
+    }
+   .ion{
+    font-size: 1.7rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.2rem;
+   }
+  }
+  .prize {
+    width: 5rem;
+  }
+}
